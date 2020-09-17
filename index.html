@@ -46,26 +46,28 @@
             <div class="line line-3"></div>
         </div>
 
-        <nav class="nav">
-            <ul class="nav-menu">
-                <li class="nav-menu_item" data-link=".main">Home</li>
-                <li class="nav-menu_item" data-link=".about">About</li>
-                <li class="nav-menu_item" data-link=".ability">Ability</li>
-                <li class="nav-menu_item" data-link=".skills">Skills</li>
-                <li class="nav-menu_item" data-link=".work">Portfolio</li>
-                <li class="nav-menu_item" data-link=".contact">Contact</li>
-            </ul>
-        </nav>
+        <div class="nav-wrap">
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li class="nav-menu_item" data-link=".main"><span data-link=".main">Home</span></li>
+                    <li class="nav-menu_item" data-link=".about"><span data-link=".about">About</span></li>
+                    <li class="nav-menu_item" data-link=".ability"><span data-link=".ability">Ability</span></li>
+                    <li class="nav-menu_item" data-link=".skills"><span data-link=".skills">Skills</span></li>
+                    <li class="nav-menu_item" data-link=".work"><span data-link=".work">Portfolio</span></li>
+                    <li class="nav-menu_item" data-link=".contact"><span data-link=".contact">Contact</span></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- MAIN -->
     <section class="main">
         <h2 class="hide">메인영역</h2>
-        <div class="main-img section"><img src="images/main_visual.jpg" alt="박수빈"></div>
-        <div class="main-text section">
-            <p>My<br>portfolio<br>Website</p>
-            <span>성실함을 무기로 끊임 없이 발전해나가는 박수빈 입니다.</span>
-        </div>
+            <div class="main-img section"><img src="images/main_visual.jpg" alt="박수빈"></div>
+            <div class="main-text section-container">
+                <p>My<br>portfolio<br>Website</p>
+                <span>성실함을 무기로 끊임 없이 발전해나가는 박수빈 입니다.</span>
+            </div>
     </section>
 
     <!-- ABOUT ME -->
@@ -186,6 +188,9 @@
         </div>
     </section>
 
+    <button class="arrow-up"> 
+        <i class="xi-arrow-top"></i>
+    </button>
     <!-- FOOTER -->
     <footer class="footer section">
         <p class="section-container">본 사이트는 상업용이 아닌 개인 포토폴리오 사이트 입니다.</p>
