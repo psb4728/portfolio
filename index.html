@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SUBEEN's Portfolio</title>
+
+    <meta name="dsecription" content="Webpublish SUBEEN">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=0;">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="author" content="SUBEEN">
+    <meta name="Keywords" content="웹퍼블리셔, 포토폴리오, ui, ux, webpublisher portfolio, portfolio, 박수빈">
+
+    <!-- http://ogp.me/ -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SUBEEN's Portfolio">
+  <meta property="og:title" content="Build software better, together">
+  <meta property="og:description" content="Webpublish SUBEEN">
+
+    <!-- Faivicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- xeicon -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- Script -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="navbar">
+        <h1 class="logo">
+            <a href="#"><img src="images/logo.png" alt="로고"></a>
+        </h1>
+
+        <!-- Toggle button -->
+        <div class="toggle-btn">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li class="nav-menu_item" data-link=".main">Home</li>
+                <li class="nav-menu_item" data-link=".about">About</li>
+                <li class="nav-menu_item" data-link=".ability">Ability</li>
+                <li class="nav-menu_item" data-link=".skills">Skills</li>
+                <li class="nav-menu_item" data-link=".work">Portfolio</li>
+                <li class="nav-menu_item" data-link=".contact">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <section class="main">
+        <h2 class="hide">메인영역</h2>
+        <div class="main-img section"><img src="images/main_visual.jpg" alt="박수빈"></div>
+        <div class="main-text section">
+            <p>My<br>portfolio<br>Website</p>
+            <span>성실함을 무기로 끊임 없이 발전해나가는 박수빈 입니다.</span>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about section section-container">
+        <h2>About me</h2>
+        <h3>저를 소개 하겠습니다.</h3>
+        <div class="about-container">
+            <div class="profile">
+                <img src="images/profile2.jpg" alt="박수빈" title="박수빈">
+            </div>
+            <ul class="profile-info">
+                <li>
+                    <span>Name</span>
+                    :&nbsp; Park Su Been
+                </li>
+                <li>
+                    <span>Birth</span>
+                    :&nbsp; 1996. 11. 16
+                </li>
+                <li>
+                    <span>Live</span>
+                    :&nbsp; Incheon
+                </li>
+                <li>
+                    <span>I can</span>
+                    :&nbsp; HTML5, CSS3, jQuery, JavaScript
+                </li>
+                <li>
+                    <span>Intro</span>
+                    :&nbsp; 기본기 부터 튼튼하게 점점 빌드업 하고 있는 박수빈 입니다.<br>지금에 안주하지 않고 끊임없이 공부하며 사용자를 먼저 생각하는 웹퍼블리셔가 되겠습니다.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ABILITY -->
+    <section class="ability section">
+        <h2>Ability</h2>
+        <h3>저의 능력을 수치화 하였습니다.</h3>
+            <div class="abilityset section-container">
+                <ul class="ability-graph">
+                    <li class="graph-html"><div style="width: 90%;"><span>90%</span>HTML5</div></li>
+                    <li class="graph-css"><div style="width: 80%;"><span>80%</span>CSS3</div></li>
+                    <li class="graph-jquery"><div style="width: 70%;"><span>90%</span>jQuery</div></li>
+                    <li class="graph-javascript"><div style="width: 60%;"><span>90%</span>JavaScript</div></li>
+                </ul>
+            </div>
+    </section>
+
+    <!-- WORk -->
+    <section class="work section">
+        <h2>My Portfolio</h2>
+        <h3>Projects</h3>
+        <div class="work-categories">
+            <button class="category-btn active">All<span class="category_count">6</span></button>
+            <button class="category-btn">Reactive<span class="category_count">3</span></button>
+            <button class="category-btn">PC<span class="category_count">2</span></button>
+            <button class="category-btn">Mobile<span class="category_count">1</span></button>
+        </div>
+
+        <div class="section-container">
+            <div class="work_projects">
+                <a href="#" class="project" target="blank">
+                    <img CLASS="project-img" src="images/mockup1.png" alt="Github">
+                    <div class="project-description">
+                        <h3>Github Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="blank">
+                    <img CLASS="project-img" src="images/mockup1.png" alt="Github">
+                    <div class="project-description">
+                        <h3>Github Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="blank">
+                    <img CLASS="project-img" src="images/mockup1.png" alt="Github">
+                    <div class="project-description">
+                        <h3>Github Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="blank">
+                    <img CLASS="project-img" src="images/mockup1.png" alt="Github">
+                    <div class="project-description">
+                        <h3>Github Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="blank">
+                    <img CLASS="project-img" src="images/mockup1.png" alt="Github">
+                    <div class="project-description">
+                        <h3>Github Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="blank">
+                    <img CLASS="project-img" src="images/mockup1.png" alt="Github">
+                    <div class="project-description">
+                        <h3>Github Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section">
+        <h2>Contact</h2>
+        <h3>적극적으로 구직 활동 중인 웹퍼블리셔 박수빈 입니다.</h3>
+        <div class="contact-wrap section-container">
+            <ul class="contact-list">
+                <li><a href="tel:010-8862-7997" class="call"><i class="xi-call"></i>010-8862-7997</a></li>
+                <li><a href="mailto:qkrtnqls197@gmail.com" class="mail"><i class="xi-mail"></i>qkrtnqls197@gmail.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer section">
+        <p class="section-container">본 사이트는 상업용이 아닌 개인 포토폴리오 사이트 입니다.</p>
+    </footer>
+</body>
+
+</html>
