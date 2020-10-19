@@ -208,26 +208,28 @@ h3 {
 
 /* WORK */
 .work-categories,
-.work_projects
+.work-projects
 {
   text-align: center;
 }
 .work-categories { margin: 4rem; }
 .category-btn {
-  border: 1px solid #4d4d4d;;
+  border: 1px solid #4d4d4d;
   background: #fff;
   border-radius: 8px;
   font-size: 1.6rem;
-  padding: .8rem 4.8rem;
+  padding: .8rem 3rem;
   margin-left: 1rem; 
   cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
 }
-.category-btn.active,
+.category-btn.selected,
 .category-btn:hover {
   background: #30475e;
   color:  #e7dec8;
 }
-.category-btn.active .category_count,
+.category-btn.selected .category_count,
 .category-btn:hover .category_count {
   opacity: 1;
   top: 0;
@@ -244,15 +246,21 @@ h3 {
   border-radius: 50%;
   color: #fff4e4;
   opacity: 0;
-  transition: all .4s ease-in-out;
+  transition: all .3s ease-in-out;
 }
-.work_projects {
+.work-projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
+  opacity: 1;
+  transition: 0.4s ease-out;
 }
-.work_projects .project {
+.work-projects.ani-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
+}
+.work-projects .project {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,6 +278,8 @@ h3 {
   box-sizing: border-box;
   transition: all .5s;
 }
+.project-wrap.invisible { display: none;}
+
 .project-description {
   display: inline-block;
   position: absolute;
@@ -343,7 +353,7 @@ h3 {
 
 }
 .contact-list li {
-  padding: 2rem 0; 
+  padding: 1.2rem 0; 
 }
 .contact-list li a {
   font-size: 2.5rem;
@@ -352,15 +362,52 @@ h3 {
 .contact-list li a i {
   margin-right: .5rem;
 }
-
+.sns-list { margin-top: 1rem; }
+.sns-list li { 
+  display: inline-block;
+  margin-left: 1rem;
+}
+.sns-list > li i {
+  font-size: 3rem;
+  color: #30475e;
+}
+.sns-list > li .naver:hover {
+  color: #04cf5c;
+}.sns-list > li .github:hover {
+  color: #24292e;
+}
+/* FOOTER */
 .footer {
+  position: relative;
   text-align: center;
 }
 .footer p {
   color: #333;
 }
-
-
+#back-to-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  padding: 1em;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #313943;
+  background: rgba(255, 255, 255, .9);
+  border-radius: 8px;
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, .25);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  opacity: 0;
+}
+#back-to-top:hover {
+  background-color: #fff;
+  padding: 1.5em 1em;
+}
+#back-to-top.visible {
+  opacity: 1;
+}
 .arrow-up {
   position: fixed;
   bottom: 5rem;
@@ -437,6 +484,10 @@ h3 {
 
   .about .about-container {
     flex-direction: column;
+  }
+  .about-container .profile > img {
+    width: 260px;
+    height: auto;
   }
   .about-container .profile-info {
     padding: 3rem 0 0 6rem;
