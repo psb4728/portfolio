@@ -7,7 +7,7 @@
     <meta name="dsecription" content="Webpublish SUBEEN">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="user-scalable=0;">
+    <meta name="viewport" content="user-scalable=0">
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="author" content="SUBEEN">
     <meta name="Keywords" content="웹퍼블리셔, 포토폴리오, ui, ux, webpublisher portfolio, portfolio, 박수빈">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- xeicon -->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="css/XEIcon-2.2.0/xeicon.min.css">
 
     <!-- Script -->
     <script src="js/main.js" defer></script>
@@ -122,15 +122,15 @@
         <h2>My Portfolio</h2>
         <h3>Projects</h3>
         <div class="work-categories">
-            <button class="category-btn active">All<span class="category_count">6</span></button>
-            <button class="category-btn">Responsive<span class="category_count">3</span></button>
-            <button class="category-btn">PC<span class="category_count">2</span></button>
-            <button class="category-btn">Mobile<span class="category_count">1</span></button>
+            <button class="category-btn selected" data-filter="*">All<span class="category_count">6</span></button>
+            <button class="category-btn" data-filter="responsive">Responsive<span class="category_count">3</span></button>
+            <button class="category-btn" data-filter="pc">PC<span class="category_count">2</span></button>
+            <button class="category-btn" data-filter="mobile">Mobile<span class="category_count">1</span></button>
         </div>
 
         <article class="section-container">
-            <div class="work_projects">
-                <div class="project-wrap">
+            <div class="work-projects">
+                <div class="project-wrap" data-type="responsive">
                     <a href="#" class="project" target="blank">
                         <img src="images/mockup1.png" alt="Github">
                         <div class="project-description">
@@ -140,7 +140,7 @@
                         <div class="project-bg"></div>
                     </a>
                 </div>
-                <div class="project-wrap">
+                <div class="project-wrap" data-type="responsive">
                     <a href="#" class="project" target="blank">
                         <img src="images/mockup1.png" alt="Github">
                         <div class="project-description">
@@ -150,7 +150,7 @@
                         <div class="project-bg"></div>
                     </a>
                 </div>
-                <div class="project-wrap">
+                <div class="project-wrap" data-type="responsive">
                     <a href="#" class="project" target="blank">
                         <img src="images/mockup1.png" alt="Github">
                         <div class="project-description">
@@ -160,7 +160,7 @@
                         <div class="project-bg"></div>
                     </a>
                 </div>
-                <div class="project-wrap">
+                <div class="project-wrap" data-type="pc">
                     <a href="#" class="project" target="blank">
                         <img src="images/mockup1.png" alt="Github">
                         <div class="project-description">
@@ -170,7 +170,7 @@
                         <div class="project-bg"></div>
                     </a>
                 </div>
-                <div class="project-wrap">
+                <div class="project-wrap" data-type="pc">
                     <a href="#" class="project" target="blank">
                         <img src="images/mockup1.png" alt="Github">
                         <div class="project-description">
@@ -180,7 +180,7 @@
                         <div class="project-bg"></div>
                     </a>
                 </div>
-                <div class="project-wrap">
+                <div class="project-wrap" data-type="mobile">
                     <a href="#" class="project" target="blank">
                         <img src="images/mockup1.png" alt="Github">
                         <div class="project-description">
@@ -203,7 +203,12 @@
                 <li><a href="tel:010-8862-7997" class="call"><i class="xi-call"></i>010-8862-7997</a></li>
                 <li><a href="mailto:qkrtnqls197@gmail.com" class="mail"><i class="xi-mail"></i>qkrtnqls197@gmail.com</a></li>
             </ul>
+            <ul class="sns-list">
+                <li><a href="https://blog.naver.com/qkrtnqls197" target="blank"><i class="xi-naver-square naver"></i></a></li>
+                <li><a href="https://github.com/psb4728" target="blank"><i class="xi-github github"></i></a></li>
+            </ul>
         </div>
+        
     </section>
 
     <button class="arrow-up"> 
@@ -212,6 +217,7 @@
     <!-- FOOTER -->
     <footer class="footer section">
         <p class="section-container">본 사이트는 상업용이 아닌 개인 포토폴리오 사이트 입니다.</p>
+        <a href="#" id="back-to-top">top</a>
     </footer>
 </body>
 
