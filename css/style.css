@@ -90,7 +90,7 @@ h3 {
 .line {
   width: 100%;
   height: 3px;
-  background: #eaf5ff;
+  background: #fff;
   transition: all .4s;
 }
 .active .line-1 {
@@ -296,10 +296,12 @@ h3 {
   opacity: 0;
   z-index: 1;
 }
+.project-description { box-sizing: border-box; }
 .project-description > h3 {
   font-size: 2rem;
   color: #fff;
 }
+.project-description span { display: inline-block; width: 90%; }
 .project > img {
   width: 90%;
   height: auto;
@@ -356,7 +358,7 @@ h3 {
   padding: 1.2rem 0; 
 }
 .contact-list li a {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #30475e;
 }
 .contact-list li a i {
@@ -459,7 +461,7 @@ h3 {
     top: 7rem;
     right: -80%;
     width: 80%;
-    height: 100%;
+    height: 100vh;
     background: rgba(48, 71, 94, 0.8);
     padding: 5%;
     box-sizing: border-box;
