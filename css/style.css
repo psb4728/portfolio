@@ -1,8 +1,7 @@
 @charset "utf-8";
-/* Global */
-
 
 /* Common */
+::selection { background: #b4d5f4; }
 .section {
   max-width: 100%;
   padding: 4rem;
@@ -128,9 +127,13 @@ h3 {
 /* ABOUT ME */
 .about .about-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 6rem 0;
+  box-sizing: border-box;
+}
+.about-container .profile > img {
+  width: 34rem;
 }
 .about-container .profile-info {
   font-weight: 700;
@@ -146,14 +149,16 @@ h3 {
   margin: 0 0 0 -7rem;
 }
 
+
 /* ABILITY */
 .ability {
   background: #e7dec8;
 }
 .abilityset {
-  padding: 4rem 0;
+  padding: 4rem 4rem;
   margin-top: 6rem;
   background: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
 }
 .ability-graph > li {
   display: flex;
@@ -198,12 +203,12 @@ h3 {
 @keyframes graph3 {
   0% { width: 0; color: rgba(255, 255, 255, 0); }
   50% { color: rgba(255, 255, 255, 1);}
-  100% { width: 70%; }
+  100% { width: 50%; }
 }
 @keyframes graph4 {
   0% { width: 0; color: rgba(255, 255, 255, 0); }
   50% { color: rgba(255, 255, 255, 1);}
-  100% { width: 60%; }
+  100% { width: 50%; }
 }
 
 /* WORK */
@@ -346,6 +351,52 @@ h3 {
 .project-wrap:hover::after { height: 95%; }
 
 
+/* Self Interview */
+/* .self-interview { background: #f9f9f9; } */
+.self-container { 
+  position: relative;
+  box-sizing: border-box;
+}
+.question {
+  margin-bottom: 2rem;
+  background: #ededed;
+}
+.self-wrap .tit {
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  color: #fff;
+  background: #3f597c;
+  cursor: pointer;
+}
+.self-wrap .con { 
+  font-size: 1.6rem;
+  color: #1b1b1b;
+  padding: 2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+.self-container .btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+#btn-collapse,
+#btn-open {
+  width: 100px;
+  height: 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 2rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+#btn-collapse:hover,
+#btn-open:hover {
+  background: #e5e5e5;
+}
+
 /* CONTACT */
 .contact {
   background: #e7dec8;
@@ -430,10 +481,6 @@ h3 {
   .about-container .profile-info {
     max-width: 40rem;
   }
-  .about-container .profile > img {
-    width: 40rem;
-    height: 40rem;
-  }
 }
 
 @media screen and (max-width: 870px) {
@@ -487,10 +534,6 @@ h3 {
   .about .about-container {
     flex-direction: column;
   }
-  .about-container .profile > img {
-    width: 260px;
-    height: auto;
-  }
   .about-container .profile-info {
     padding: 3rem 0 0 6rem;
     text-align: justify;
@@ -519,4 +562,11 @@ h3 {
   .project-description > h3 { font-size: 3rem; }
   
   .category-btn { margin: .5rem; }
+
+  #btn-collapse,
+  #btn-open {
+  width: 80px;
+  height: 30px;
+  margin: 2rem 0 2rem 1rem;
+}
 }

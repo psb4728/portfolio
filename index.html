@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <!-- HEADER -->
+    <!-- Header -->
     <header class="navbar">
         <h1 class="logo">
             <a href="#"><img src="images/logo.png" alt="로고"></a>
@@ -52,15 +52,15 @@
                     <li class="nav-menu_item" data-link=".main"><span data-link=".main">Home</span></li>
                     <li class="nav-menu_item" data-link=".about"><span data-link=".about">About</span></li>
                     <li class="nav-menu_item" data-link=".ability"><span data-link=".ability">Ability</span></li>
-                    <li class="nav-menu_item" data-link=".skills"><span data-link=".skills">Skills</span></li>
                     <li class="nav-menu_item" data-link=".work"><span data-link=".work">Portfolio</span></li>
+                    <li class="nav-menu_item" data-link=".self-interview"><span data-link=".self-interview">Self interview</span></li>
                     <li class="nav-menu_item" data-link=".contact"><span data-link=".contact">Contact</span></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- MAIN -->
+    <!-- Main -->
     <section class="main">
         <h2 class="hide">메인영역</h2>
             <div class="main-img section"><img src="images/main_visual.jpg" alt="박수빈"></div>
@@ -70,7 +70,7 @@
             </div>
     </section>
 
-    <!-- ABOUT ME -->
+    <!-- About Me -->
     <section class="about section section-container">
         <h2>About me</h2>
         <h3>저를 소개 하겠습니다.</h3>
@@ -97,13 +97,13 @@
                 </li>
                 <li>
                     <span>Intro</span>
-                    :&nbsp; 기본기 부터 튼튼하게 점점 빌드업 하고 있는 박수빈 입니다.<br>지금에 안주하지 않고 끊임없이 공부하며 사용자를 먼저 생각하는 웹퍼블리셔가 되겠습니다.
+                    :&nbsp; 웹접근성과 크로스 브라우징을 생각하여 코딩하고 <br>가능한 제이쿼리 보다는 자바스크립트를 사용하고 있으며<br>더 나아가 배우고 싶은것은 SASS, Github, Git을 배우고 싶습니다.<br>소통과 배움에 적극적인 웹퍼블리셔 박수빈 입니다. 
                 </li>
             </ul>
         </div>
     </section>
 
-    <!-- ABILITY -->
+    <!-- Ability -->
     <section class="ability section">
         <h2>Ability</h2>
         <h3>저의 능력을 수치화 하였습니다.</h3>
@@ -111,13 +111,13 @@
                 <ul class="ability-graph">
                     <li class="graph-html"><div style="width: 90%;"><span>90%</span>HTML5</div></li>
                     <li class="graph-css"><div style="width: 80%;"><span>80%</span>CSS3</div></li>
-                    <li class="graph-jquery"><div style="width: 70%;"><span>70%</span>jQuery</div></li>
-                    <li class="graph-javascript"><div style="width: 60%;"><span>60%</span>JavaScript</div></li>
+                    <li class="graph-jquery"><div style="width: 50%;"><span>50%</span>jQuery</div></li>
+                    <li class="graph-javascript"><div style="width: 50%;"><span>50%</span>JavaScript</div></li>
                 </ul>
             </div>
     </section>
 
-    <!-- WORk -->
+    <!-- Work -->
     <section class="work section">
         <h2>My Portfolio</h2>
         <h3>Projects</h3>
@@ -154,8 +154,8 @@
                     <a href="#" class="project" target="blank">
                         <img src="images/mockup1.png" alt="Github">
                         <div class="project-description">
-                            <h3>Github Site</h3>
-                            <span>Clone coding with HTML and CSS</span>
+                            <h3>웹사이트 준비중 입니다.</h3>
+                            <span>완료 되는데로 올릴 예정입니다.</span>
                         </div>
                         <div class="project-bg"></div>
                     </a>
@@ -174,8 +174,8 @@
                     <a href="#" class="project" target="blank">
                         <img src="images/mockup1.png" alt="Github">
                         <div class="project-description">
-                            <h3>Github Site</h3>
-                            <span>Clone coding with HTML and CSS</span>
+                            <h3>웹사이트 준비중 입니다.</h3>
+                            <span>완료 되는데로 올릴 예정입니다.</span>
                         </div>
                         <div class="project-bg"></div>
                     </a>
@@ -194,7 +194,52 @@
         </article>
     </section>
 
-    <!-- CONTACT -->
+    <!-- Self Interview -->
+    <section class="self-interview section"> 
+        <h2>Self Interview</h2>
+        <h3>셀프 인터뷰 입니다.</h3>
+        <div class="self-container section-container">
+            <div class="btn-wrap">
+                <button id="btn-collapse">Collapse All</button>
+                <button id="btn-open">Open All</button>
+            </div>
+            <section class="self-wrap">
+                <article class="question active">
+                    <p class="tit">+ 기존 분야와 전혀 다른 분야를 선택하게된 이유가 뭔가요?</p>
+                    <div class="con">
+                        <p>
+                          이전 업무의 특성상 새로운 발전보다는 안정적인 분석만을 할 수 밖에 없는 상황이였습니다. 업무에 익숙해진 후 에는 그 상황에 안주하고 있는 제 모습을 보며, 
+                          자기개발이 가능한 업무를 하고 싶다고 생각하였고, 그 과정에서 끊임없이 발전해야하는 퍼블리셔라는 직업을 알게 되어 더 늦기전에 도전 해봐야겠다는 생각을 가지고 공부를 시작하였습니다. 
+                          물론 처음에는 코딩을 하다가 막히는 문제도 많았지만 그 과정에서 스스로 문제해결을 하며, 성취감과 자신감을 얻는 저의 모습을 발견 하였습니다.<br>
+                          변화에 두려워 하지 않는 끊임없이 배움의 자세를 가지고 나아가는 퍼블리셔가 되고 싶습니다. 
+
+                        </p>
+                    </div>
+                </article>
+                <article class="question">
+                    <p class="tit">+ 본인만의 스트레스 해소법이 있나요?</p>
+                    <div class="con">
+                        <p>
+                          저는 자전거와 배구로 스트레스를 해소합니다.<br> 자전거를 타는 동안은 잡념에서 벗어나 아무 생각을 안 하게 되며, 그러다 보면 자연스럽게 스트레스도 해소가 됩니다.<br>
+                          그리고 배구 경기를 보면서 시원시원한 경기를 보면, 스파이크 한 번 한 번에 스트레스가 같이 사라지는 기분을 느낍니다. 
+                        </p>
+                    </div>
+                </article>
+                <article class="question">
+                    <p class="tit">+ 앞으로의 목표는 무엇인가요?</p>
+                    <div class="con">
+                        <p>
+                          첫째, 사용자 입장에서 생각하여 코딩하고, 웹 표준과 웹 접근성 크로스 브라우징 까지 완벽하게 해낼 수 있는 퍼블리셔가 되고 싶습니다.<br><br>
+                          둘째, 디자이너, 개발자와 원활한 협업을 위해 오픈 마인드로 커뮤니케이션을 하겠습니다.<br><br>
+                          셋째, 변화가 빠른 IT 업계 특성에 맞게 빠른 변화에 두려워하지 않고 호기심으로 다가가 즐거운 마음으로 새로운 트렌드를 받아들이고, 더 나아가서는 퍼블리싱까지 잘 하는 프론트앤드 개발자가 되고 싶습니다.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </section>
+
+    <!-- Contact -->
     <section class="contact section">
         <h2>Contact</h2>
         <h3>적극적으로 구직 활동 중인 웹퍼블리셔 박수빈 입니다.</h3>

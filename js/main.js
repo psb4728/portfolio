@@ -15,12 +15,12 @@ document.addEventListener('scroll', function() {
 
 // navbar menu 클릭시 원하는 섹션으로 이동
 var navbarMenu = document.querySelector('.nav-menu');
-navbarMenu.addEventListener('click', function(event) {
+navbarMenu.addEventListener('click', function(e) {
   // 모바일 화면에서 nav-menu를 클릭시 active 클래스를 remove하기 위한 변수
   var navWrap = document.querySelector('.nav-wrap');
   var navbar = document.querySelector('.navbar');
   
-  var target = event.target;
+  var target = e.target;
   var link = target.dataset.link;
   if (link == null) {
     return;
@@ -103,6 +103,50 @@ workBtnContainer.addEventListener('click', function (e) {
     projectContainer.classList.remove('ani-out');
   }, 300);
 });
+
+
+// self-interview 아코디언 구현
+var btnCollapase = document.getElementById('btn-collapse'),
+    btnOpen = document.getElementById('btn-open'),
+    question = document.getElementsByClassName('question'),
+    tit = document.getElementsByClassName('tit'),
+    answer = document.getElementsByClassName('con');
+
+// 제목을 클릭하면 할일
+for(var i = 0; i < tit.length; i++) {
+  tit[i].addEventListener('click', function(e) {
+    for(var j = 0; j < question.length; j++) {
+      question[j].classList.remove('active');
+      e.target.parentNode.classList.add('active');
+      activateBody();
+    }
+  });
+}
+function activateBody() {
+  // con 모두 안보이도록 answer display:none;
+  for(var k = 0; k < answer.length; k++) {
+    answer[k].style.display = 'none';
+  }
+
+  // 클래스명 active가 있는 question 자식중 con 나타나도록
+  var activePanel = document.querySelector('.question.active .con');
+  activePanel.style.display = 'block';
+}
+activateBody();
+
+// collapse all 버튼을 클릭하면 모든 answer 안보이도록
+btnCollapase.addEventListener('click', function() {
+  for(var i = 0; i < answer.length; i++) {
+    answer[i].style.display = 'none';
+  }
+})
+// open all 버튼을 클릭하면 모든 answer 보이도록
+btnOpen.addEventListener('click', function() {
+  for(var x = 0; x < answer.length; x++) {
+    answer[x].style.display = 'block';
+  }
+})
+
 
 // back to top button
 var btt = document.getElementById('back-to-top'),
