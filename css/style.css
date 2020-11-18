@@ -55,14 +55,14 @@ h3 {
 .navbar .logo { margin: 0 2rem;}
 .navbar .nav { margin: 0 2rem;}
 .nav-menu { display: flex; }
-.nav-menu .nav-menu_item {
+.nav-menu .nav-menu-item {
   position: relative;
   padding: .8rem 1.2rem;
   margin: 0 .4rem;
   color: #eaf5ff;
 }
-.nav-menu .nav-menu_item span { display: inline-block; }
-.nav-menu .nav-menu_item span::after {
+.nav-menu .nav-menu-item span { display: inline-block; }
+.nav-menu .nav-menu-item span::after {
   content: "";
   display: block;
   width: 0;
@@ -71,8 +71,8 @@ h3 {
   background: #e7dec8;
   transition: width 0.3s;
 }
-.nav-menu .nav-menu_item:hover { cursor: pointer; }
-.nav-menu .nav-menu_item:hover span::after { width: 100%; }
+.nav-menu .nav-menu-item:hover { cursor: pointer; }
+.nav-menu .nav-menu-item:hover span::after { width: 100%; }
 
 .toggle-btn {
   width: 3.5rem;
@@ -520,7 +520,7 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
-  .nav-menu .nav-menu_item { 
+  .nav-menu .nav-menu-item { 
     font-size: 6rem;
     text-align: center;
     margin-bottom: 2rem;

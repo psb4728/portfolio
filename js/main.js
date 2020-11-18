@@ -16,6 +16,7 @@ document.addEventListener('scroll', function() {
 // navbar menu 클릭시 원하는 섹션으로 이동
 var navbarMenu = document.querySelector('.nav-menu');
 navbarMenu.addEventListener('click', function(e) {
+  console.log(e.target.dataset.link);
   // 모바일 화면에서 nav-menu를 클릭시 active 클래스를 remove하기 위한 변수
   var navWrap = document.querySelector('.nav-wrap');
   var navbar = document.querySelector('.navbar');
@@ -25,11 +26,10 @@ navbarMenu.addEventListener('click', function(e) {
   if (link == null) {
     return;
   }
-  
   navbar.classList.remove('active');
   navWrap.classList.remove('active');
   navbarMenu.classList.remove('active');
-  scrollIntoView(link);
+  scrollIntoView(link); 
 });
 
 function scrollIntoView(selector) {
