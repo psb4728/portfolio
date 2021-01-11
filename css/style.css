@@ -3,6 +3,7 @@
 /* Common */
 ::selection { background: #b4d5f4; }
 .section {
+  position: relative;
   max-width: 100%;
   padding: 4rem;
   margin: auto;
@@ -10,6 +11,14 @@
 .section-container {
   max-width: 120rem;
   margin: auto;
+}
+.space {
+  position: absolute;
+  top: -7rem;
+  left: 0px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }
 .clearfix {
   content: ""; 

@@ -16,19 +16,22 @@ document.addEventListener('scroll', function() {
 // navbar menu 클릭시 원하는 섹션으로 이동
 var navbarMenu = document.querySelector('.nav-menu');
 navbarMenu.addEventListener('click', function(e) {
-  console.log(e.target.dataset.link);
-  // 모바일 화면에서 nav-menu를 클릭시 active 클래스를 remove하기 위한 변수
-  var navWrap = document.querySelector('.nav-wrap');
-  var navbar = document.querySelector('.navbar');
-  
+  // console.log(e.target.dataset.link);
   var target = e.target;
   var link = target.dataset.link;
   if (link == null) {
     return;
   }
+
+  // 모바일 화면에서 nav-menu를 클릭시 active 클래스를 remove하기 위한 변수
+  var navWrap = document.querySelector('.nav-wrap');
+  var navbar = document.querySelector('.navbar');
+
+  // 모바일시 메뉴 클릭후 active 클래스 제거
   navbar.classList.remove('active');
   navWrap.classList.remove('active');
   navbarMenu.classList.remove('active');
+  
   scrollIntoView(link); 
 });
 
