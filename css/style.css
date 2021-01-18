@@ -13,12 +13,12 @@
   margin: auto;
 }
 .space {
-  width: 1000px;
+  width: 1px;
   height: 3rem;
   opacity: 0;
   background-color: #0061ad;
   transform: translate(0, -5rem);
-  z-index:-100000;
+  z-index:-10;
 }
 .clearfix {
   content: ""; 
