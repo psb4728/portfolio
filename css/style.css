@@ -5,7 +5,7 @@
 .section {
   position: relative;
   max-width: 100%;
-  padding: 4rem;
+  padding: 4rem 4rem 7rem 4rem;
   margin: auto;
 }
 .section-container {
@@ -13,11 +13,12 @@
   margin: auto;
 }
 .space {
-  width: 1px;
-  height: 70px;
+  width: 1000px;
+  height: 3rem;
   opacity: 0;
+  background-color: #0061ad;
   transform: translate(0, -5rem);
-  z-index:-1;
+  z-index:-100000;
 }
 .clearfix {
   content: ""; 
@@ -196,6 +197,33 @@ h3 {
 .graph-css > div.on { animation: graph2 2s 1; }
 .graph-jquery > div.on { animation: graph3 2s 1; }
 .graph-javascript > div.on { animation: graph4 2s 1; }
+
+.abilityset .ability-desc {
+  width: 100%;
+  margin: 3rem 0 -3rem;
+}
+.abilityset .ability-desc li {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+.ability-desc li em { position: relative; }
+.ability-desc li em.red { color: #de4b25; }
+.ability-desc li em.blue { color: #0061ad; }
+.ability-desc li em.yellow { color: #e9d54d; }
+.ability-desc li em::before {
+  content: '';
+  display: inline-block;
+  margin-right: .5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+.ability-desc li em.red::before { background: #de4b25; }
+.ability-desc li em.blue::before { background: #0061ad; }
+.ability-desc li em.yellow::before { background: #e9d54d; }
 
 
 @keyframes graph1 {
