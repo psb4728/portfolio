@@ -319,6 +319,10 @@ h3 {
   width: 90%;
   height: auto;
 }
+.project-description .color { 
+  font-weight: 700;
+  color: #f4a636; 
+}
 .project-bg {
   display: block;
   position: absolute;
