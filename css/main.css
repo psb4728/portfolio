@@ -132,6 +132,7 @@ h3 {
   font-weight: 400;
   color: #eaf5ff;
 }
+.main .section { padding: 4rem; }
 
 /* ABOUT ME */
 .about .about-container {
